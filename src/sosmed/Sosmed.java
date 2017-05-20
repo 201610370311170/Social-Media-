@@ -36,6 +36,42 @@ public class Sosmed {
         grup2.add(new data("Debora", "Perempuan", "MALANG", "Debora@gmail.com"));
         
         
+        
+        System.out.println("\n--DAFTAR TEMAN GRUP 1--");
+        
+       //INI SORTING   
+        System.out.println();
+        Collections.sort(grup1);
+        for(data d : grup1){ 
+            System.out.println(d.getNama());
+        }
+
+        
+            System.out.println("\n--DAFTAR TEMAN GRUP 2--");
+        System.out.println();
+        Collections.sort(grup2);
+        for(data d : grup2){
+            System.out.println(d.getNama());
+           
+        }
+        
+        
+        //INI BUAT LINKED (HASHMAP)
+        HashMap<String, data> objek1 = new HashMap<>();
+        objek1.put("Arin", grup1.get(0));
+        objek1.put("Denis", grup1.get(1));
+        objek1.put("Ropip", grup1.get(2));
+        objek1.put("Sugiono", grup1.get(3));
+        objek1.put("Yudi", grup1.get(4));
+        System.out.println("");
+        
+        
+        objek1.put("Debora", grup2.get(0));
+        objek1.put("Freya", grup2.get(1));
+        objek1.put("Irhaz", grup2.get(2));
+        objek1.put("Rere", grup2.get(3));
+        objek1.put("Valhalla", grup2.get(4));
+         
     }
     
 }
