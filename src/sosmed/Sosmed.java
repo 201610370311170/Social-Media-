@@ -72,6 +72,32 @@ public class Sosmed {
         objek1.put("Rere", grup2.get(3));
         objek1.put("Valhalla", grup2.get(4));
          
+            
+            System.out.print("Lihat profil Teman : ");
+        
+        
+        Scanner scn = new Scanner(System.in);
+        String objek2 = input.nextLine();
+        
+            if(objek1.containsKey(objek2)==true){
+                System.out.println(objek1.get(objek2).getNama()+"\t\t"+objek1.get(objek2).getGender()+"\t"+objek1.get(objek2).getAlamat()+"\t\t"+objek1.get(objek2).getEmail());
+            }
+            else{
+                System.err.println("DATA TIDAK DITEMUKAN");
+            }
+                
+        }
+        else{
+            System.err.println("USERNAME / PASSWORD SALAH");
+            System.out.println("\n\n*USERNAME = user , PASSWORD = user");
+            System.exit(0);
+        } 
+            
+            
+    }
+
+    
+}
     }
     
 }
